@@ -1,0 +1,192 @@
+
+.sekuya-regular {
+  font-family: "Sekuya", system-ui;
+  font-weight: 400;
+  font-style: normal;
+}
+
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background: white;
+    color: #222;
+}
+
+
+/*FIXED TOP BAR*/
+.home-page {
+    
+    width: 1030px;
+    height: auto;
+    display: block;
+    margin: 0 auto;
+    border-radius: 20px;
+    /*opacity: 0.10;*/
+}
+
+#logo {
+    position: fixed;
+    top: 0px;
+    left: -40px;
+
+    width: 250px;
+    height: auto;
+
+    z-index: 1000;
+    cursor: pointer;
+}
+
+nav {
+    position: fixed;
+    right: 50px;
+    top: 50%;
+    transform: translateY(-50%);
+    display: flex;
+    flex-direction: column;
+    gap: 60px;
+
+    text-align: center;
+}
+
+nav a {
+    text-decoration: none;
+    color: lightblue;
+    font-size: 15px;
+}
+
+nav a:hover {
+    text-decoration: underline;
+}
+
+/* Centered text */
+h1{
+   font-family: "Sekuya", system-ui;
+  color: lightgray;
+  font-size: 30px;
+  text-align: center;
+}
+main {
+    max-width: 1000px;
+    margin: auto;
+    padding: 150px 50px 100px;
+}
+
+/* ---------------- INTRO ---------------- */
+
+#intro {
+    min-height: 500px;
+    padding-top: 80px;
+}
+
+#intro h1 {
+    font-size: 70px;
+    margin-bottom: 30px;
+}
+
+#intro p {
+    max-width: 600px;
+    font-size: 18px;
+    line-height: 1.7;
+}
+
+/* ---------------- TIMELINE ---------------- */
+
+#timeline {
+    position: relative;
+    width: 70%;
+    margin: 100px auto;
+    padding: 50px 0;
+}
+
+#timeline h2 {
+    text-align: center;
+    margin-bottom: 80px;
+}
+
+/* long line in the middle */
+#timeline-line {
+    position: absolute;
+    top: 150px;
+    bottom: 20px;
+    left: 50%;
+
+    width: 2px;
+    background: black;
+}
+
+/* each timeline row */
+#timeline article {
+    position: relative;
+    min-height: 150px;
+}
+
+/* black circle */
+#timeline span {
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+
+    width: 28px;
+    height: 28px;
+
+    background: black;
+    color: white;
+    border-radius: 50%;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    font-size: 12px;
+}
+
+/* text */
+#timeline p {
+    width: 40%;
+    margin: 0;
+    font-size: 18px;
+}
+
+/* odd items go right */
+#timeline article:nth-of-type(odd) p {
+    margin-left: 58%;
+    text-align: left;
+}
+
+/* even items go left */
+#timeline article:nth-of-type(even) p {
+    margin-left: 2%;
+    text-align: right;
+}
+
+/*gif*/
+#gallery {
+    margin-top: 140px;
+}
+
+#gallery h2 {
+    font-size: 38px;
+    margin-bottom: 50px;
+}
+
+#gifs {
+    display: flex;
+    gap: 25px;
+}
+
+figure {
+    margin: 0;
+    flex: 1;
+}
+
+figure img {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+}
+
+figcaption {
+    margin-top: 10px;
+    font-size: 14px;
+}
+
