@@ -107,6 +107,19 @@ body {
     cursor: pointer;
 }
 
+/*
+Design rationale:
+I used a fixed right-side navigation so users can move between sections while
+scrolling through a long page. The navigation uses flexbox with a column
+direction because the links need to be arranged vertically. I referred to
+OpenClassrooms and MDN documentation to better understand justify-content
+and alignment in flexbox.
+
+
+https://openclassrooms.com/en/courses/5295881-create-web-page-layouts-with-css/5415181-align-items-and-justify-content
+https://developer.mozilla.org/en-US/docs/Web/CSS/Reference/Properties/justify-content
+*/
+
 nav {
     position: fixed;
     right: 50px;
@@ -195,7 +208,20 @@ main {
     line-height: 1.7;
 }
 
-/* ---------------- TIMELINE ---------------- */
+/* ---------------- TIMELINE ---------------- 
+
+The interaction timeline represents the actions I completed during
+the two-minute website test. I chose a timeline because it presents
+the actions in chronological order while still keeping the layout simple.
+
+I looked at the W3Schools timeline tutorial to understand how timeline items
+can be positioned around a central line. I did not copy the tutorial code
+directly; I simplified the structure and wrote my own HTML and CSS to suit
+the visual style of this project.
+
+https://www.w3schools.com/howto/howto_css_timeline.asp
+*/
+
 
 #timeline {
     position: relative;
